@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet (free map, no API key needed) */
+@import "~leaflet/dist/leaflet.css";
+@import "~leaflet-draw/dist/leaflet.draw.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Leaflet draw toolbar — override z-index so it sits above Tailwind elements */
+.leaflet-draw-toolbar a {
+  background-image: url("~leaflet-draw/dist/images/spritesheet.png") !important;
+}
+.leaflet-retina .leaflet-draw-toolbar a {
+  background-image: url("~leaflet-draw/dist/images/spritesheet-2x.png") !important;
+}
+.leaflet-container {
+  font-family: inherit;
+}

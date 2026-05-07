@@ -1,0 +1,17 @@
+{
+  "name": "blue-carbon-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Blue Carbon Registry",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0"
+  }
+}

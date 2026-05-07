@@ -1,0 +1,40 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+sqlalchemy[asyncio]==2.0.25
+asyncpg==0.29.0
+alembic==1.13.1
+redis==5.0.1
+aioredis==2.0.1
+psycopg2-binary==2.9.9
+python-multipart==0.0.6
+python-dotenv==1.0.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Agents & LLM
+crewai==0.28.0
+langchain==0.1.6
+langchain-groq==0.0.3
+langchain-community==0.0.19
+langgraph==0.0.26
+groq==0.4.2
+
+# Vision & Image Analysis
+google-generativeai==0.7.2
+Pillow==10.2.0
+requests==2.31.0
+
+# Vector Store & Embeddings
+pinecone==7.3.0
+sentence-transformers==2.3.1
+
+# Blockchain
+web3==6.13.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.3
+
+# HTTP client
+httpx==0.26.0
+aiofiles==23.2.1
